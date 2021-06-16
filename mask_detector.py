@@ -20,7 +20,7 @@ while True:
 
     #small = cv2.resize(frame ,(0,0),fx=0.5,fy=0.5)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    face = face_cascade.detectMultiScale(gray,1.275,4)
+    face = face_cascade.detectMultiScale(gray,1.3,5)
 
     for (x,y,w,h) in face:
         face_image = frame[y:y+h, x:x+w]
